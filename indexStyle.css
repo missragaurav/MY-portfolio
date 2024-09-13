@@ -1,0 +1,139 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font from Google */
+body {
+    background-color: rgb(0, 0, 33);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Header and Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(26, 185, 185);
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+}
+
+/* Hero Section */
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.leftSection span {
+    color: blueviolet;
+}
+
+.rightSection img {
+    width: 350px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.rightSection img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* About Me Section */
+.aboutSection, .servicesSection, .projectsSection, .contactSection {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.aboutSection p, .servicesSection p, .project p {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.servicesSection .skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.skills .skill {
+    width: 30%;
+}
+
+.projectsSection .project {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contactSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactSection form label {
+    margin: 10px 0 5px 0;
+}
+
+.contactSection form input, .contactSection form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(26, 185, 185);
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: blueviolet;
+}
+
+.gaurav{
+    position:fixed;
+}
