@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Font from Google */
+/* Font and background */
 body {
     background-color: rgb(0, 0, 33);
     font-family: 'Poppins', sans-serif;
@@ -20,6 +20,10 @@ nav {
     height: 70px;
     background-color: rgb(26, 185, 185);
     padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -35,6 +39,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -47,11 +52,15 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    padding-top: 80px;
+    flex-wrap: wrap;
 }
 
 .leftSection {
     font-size: 2.5rem;
+    max-width: 600px;
+    padding: 20px;
 }
 
 .leftSection span {
@@ -68,29 +77,86 @@ nav ul li a:hover {
     transform: scale(1.1) rotate(5deg);
 }
 
-/* About Me Section */
-.aboutSection, .servicesSection, .projectsSection, .contactSection {
-    padding: 50px 0;
+/* Section Headings and Layout */
+section {
+    padding: 80px 20px;
     text-align: center;
 }
 
-.aboutSection p, .servicesSection p, .project p {
-    max-width: 700px;
-    margin: 20px auto;
+section h2 {
+    font-size: 2rem;
+    color: cyan;
+    margin-bottom: 20px;
 }
 
-.servicesSection .skills {
+/* Paragraphs */
+.aboutSection p,
+.servicesSection p,
+.projectsSection p,
+.educationSection ul,
+.certificationsSection ul,
+.project p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Education Section */
+.educationSection ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
 }
 
-.skills .skill {
-    width: 30%;
+.skill {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
 }
 
-.projectsSection .project {
-    margin-bottom: 20px;
+/* Projects Section */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    color: blueviolet;
+}
+
+/* Certifications */
+.certificationsSection ul {
+    list-style-type: square;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.certificationsSection ul li a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.certificationsSection ul li a:hover {
+    color: violet;
 }
 
 /* Contact Section */
@@ -98,18 +164,28 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .contactSection form label {
-    margin: 10px 0 5px 0;
+    margin-top: 10px;
 }
 
-.contactSection form input, .contactSection form textarea {
+.contactSection form input,
+.contactSection form textarea {
     width: 300px;
     padding: 10px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+}
+
+.contactSection a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.contactSection a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -117,6 +193,8 @@ footer {
     padding: 20px;
     text-align: center;
     background-color: rgb(26, 185, 185);
+    position: relative;
+    z-index: 10;
 }
 
 footer .socials {
@@ -134,6 +212,36 @@ footer .socials a:hover {
     color: blueviolet;
 }
 
-.gaurav{
-    position:fixed;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
 }
