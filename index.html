@@ -6,7 +6,6 @@
     <title>Gaurav Mishra - Portfolio</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="indexStyle.css">
 </head>
 <body>
@@ -14,20 +13,22 @@
         <nav class="gaurav">
             <div class="left"><b>Gaurav's Portfolio</b></div>
             <div class="right">
-               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-               </ul>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <section class="first" id="home">
         <div class="leftSection">
-            <h1>Hi, My name is <br><span>Gaurav Mishra</span>,<br>I'm a Web Developer</h1>
+            <h1>Hi, I'm <br><span>Gaurav Mishra</span>,<br>a Web Developer</h1>
         </div>
         <div class="rightSection">
             <img src="gauriR.png" alt="Gaurav Mishra">
@@ -36,23 +37,33 @@
 
     <section class="aboutSection" id="about">
         <h2>About Me</h2>
-        <p>I'm a passionate web developer with experience in creating dynamic websites. I enjoy solving complex problems and building web applications that deliver great user experiences.</p>
+        <p>I am a B.Tech Computer Science student at Graphic Era Hill University with a passion for web development,
+        cryptography, and system design. I love exploring new technologies, solving problems, and building efficient applications.</p>
     </section>
 
-    <section class="servicesSection" id="services">
+    <section class="educationSection" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in Computer Science</strong>, Graphic Era Hill University (2023 - Present) – CGPA: 7.5</li>
+            <li><strong>12th Grade</strong>, Vivekanand Vidya Mandir, U.K. Board (2021) – 8.7 GPA</li>
+            <li><strong>10th Grade</strong>, Vivekanand Vidya Mandir, U.K. Board (2019) – 8.3 GPA</li>
+        </ul>
+    </section>
+
+    <section class="servicesSection" id="skills">
         <h2>My Skills</h2>
         <div class="skills">
             <div class="skill">
-                <h3>Web Development</h3>
-                <p>Building responsive, high-performance websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+                <h3>Programming Languages</h3>
+                <p>C, C++, Python, Java, SQL</p>
             </div>
             <div class="skill">
-                <h3>Machine Learning</h3>
-                <p>Developing ML models for predictive analytics using Python and popular ML libraries.</p>
+                <h3>Core Skills</h3>
+                <p>Data Structures & Algorithms, Web Development, Android App Development, Machine Learning</p>
             </div>
             <div class="skill">
-                <h3>Android Development</h3>
-                <p>Creating Android applications with seamless user experiences.</p>
+                <h3>Tools & Technologies</h3>
+                <p>HTML5, CSS3, JavaScript (ES6), LocalStorage, DOM Manipulation, GitHub</p>
             </div>
         </div>
     </section>
@@ -60,13 +71,29 @@
     <section class="projectsSection" id="projects">
         <h2>My Projects</h2>
         <div class="project">
-            <h3>Project 1: Portfolio Website</h3>
-            <p>This portfolio site showcases my work as a web developer.</p>
+            <h3><a href="https://missragaurav.github.io/To_List/" target="_blank">ToDo List Web App</a></h3>
+            <p>Created a responsive Todo List using HTML, CSS, JavaScript, and LocalStorage with dark/light theme toggle.</p>
         </div>
         <div class="project">
-            <h3>Project 2: Machine Learning Model</h3>
-            <p>Created a model to predict stock prices using Python and ML libraries.</p>
+            <h3><a href="https://github.com/missragaurav/AES_cryptography_image" target="_blank">Message Encryption & Decryption</a></h3>
+            <p>Python project implementing AES-based encryption/decryption with Substitution and Permutation logic.</p>
         </div>
+        <div class="project">
+            <h3><a href="https://github.com/missragaurav/BitTorrent_" target="_blank">MiniTorrent</a></h3>
+            <p>P2P file-sharing system using C++ with file chunking and parallel downloading.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/missragaurav/Py_To_Cpp_Converter" target="_blank">Python to C++ Converter</a></h3>
+            <p>Built using compiler design fundamentals like lexical and syntax analysis to convert Python code to C++.</p>
+        </div>
+    </section>
+
+    <section class="certificationsSection" id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="https://onlinecourses.swayam2.ac.in/nou24_ge25/certificate?q=BFEySexPHOp/2QyXNZUjpgJu73Rg4mohSWITIYTxVwKF07nZGHuump16R4B2%2BoF3" target="_blank">Android Mobile Application Development (Swayam, 8 weeks)</a></li>
+            <li><a href="https://coursera.org/verify/specialization/M0JVFB8D23JP" target="_blank">Supervised Machine Learning: Regression and Classification (Coursera, 8 weeks)</a></li>
+        </ul>
     </section>
 
     <section class="contactSection" id="contact">
@@ -83,14 +110,17 @@
 
             <input type="submit" value="Send">
         </form>
+        <p>Email: <a href="mailto:gauravmissra68@gmail.com">gauravmissra68@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918445615435">8445615435</a></p>
     </section>
 
     <footer>
         <p>&copy; 2024 Gaurav Mishra. All rights reserved.</p>
         <div class="socials">
-            <a href="https://www.linkedin.com/in/gaurav-mishra-564791221/">LinkedIn</a>
-            <a href="https://github.com/missragaurav">GitHub</a>
-            <a href="https://x.com/missragaurav">Twitter</a>
+            <a href="https://www.linkedin.com/in/gaurav-mishra-564791221/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/missragaurav" target="_blank">GitHub</a>
+            <a href="https://leetcode.com/u/Gauravmissra/" target="_blank">LeetCode</a>
+            <a href="https://x.com/missragaurav" target="_blank">Twitter</a>
         </div>
     </footer>
 
@@ -104,6 +134,5 @@
             });
         });
     </script>
-
 </body>
 </html>
